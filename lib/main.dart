@@ -109,15 +109,17 @@ class _CheerPageState extends State<CheerPage> {
                       ),
                     ],
                   ),
-                  child: Text(
-                    _currentMessage,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF4A4A4A),
-                      height: 1.5,
-                      fontFamily: 'NanumGothic', // Fallback to safe sans-serif if not available
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      _currentMessage,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF4A4A4A),
+                        fontFamily: 'NanumGothic',
+                      ),
                     ),
                   ),
                 ),
